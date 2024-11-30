@@ -4,6 +4,7 @@
 using namespace std;
 
 double extractNumeric(const string&str) {
+    //Initalizes several needed bools.
     bool isValidNumber = true;
     bool isNegative = false;
     bool hasDecimal = false;
@@ -36,6 +37,7 @@ double extractNumeric(const string&str) {
         double result = 0.0;
         int decimalPlace = 1;
         int j = 0;
+        //If there is a sign at the start, instead start the index at 1.
         if(hasSignAtStart == true) {
             j = 1;
         }
@@ -61,13 +63,13 @@ double extractNumeric(const string&str) {
         }
         return result;
     } else {
-        //If answer is not valid, return this number.
+        //If answer is not valid, return this number which will read as invalid.
         return -999999.99;
     }
     
 
 }
-
+//Main function
 int main() {
     string input;
     while(true) {
