@@ -4,7 +4,21 @@
 using namespace std;
 
 double extractNumeric(const string&str) {
-    
+    bool isValidNumber = true;
+    bool isNegative = false;
+    //Checks if string is positive
+    if (str[0] == '-') {
+            isNegative = true;
+        }
+    //Long while loop to ensure string is valid.
+    while (i <= str.length()); {
+        //Checks if string is positive
+        //Ensures string is numbers only
+        if (str[i] != "0" || ) {
+            
+        }
+    }
+
 }
 
 int main() {
